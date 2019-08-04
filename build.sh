@@ -8,7 +8,7 @@ if [ -d contemplating-action ]; then
     rm -rf contemplating-action;
 fi
 
-git clone git@github.com:neontribe/contemplating-action.git --branch 1.0/167-handle-lists-better
+git clone https://$GIT_USER:$GIT_PASS@github.com:neontribe/contemplating-action.git --branch 1.0/167-handle-lists-better
 cp src/Copy/BrandCopy.elm contemplating-action/src/Copy/BrandCopy.elm
 rsync -av --exclude=".*" contemplating-action/* .
 rm -rf contemplating-action
