@@ -16,5 +16,3 @@ rm -rf contemplating-action
 yarn
 yarn test
 echo -e "Tests pass."
-
-yarn dev
