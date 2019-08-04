@@ -1,4 +1,9 @@
-*
+/*
 !.gitignore
 !build.sh
+
+!src
+src/*
+!src/Copy
+src/Copy/*
 !src/Copy/BrandCopy.elm
