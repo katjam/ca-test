@@ -1,0 +1,4 @@
+*
+!.gitignore
+!build.sh
+!src/Copy/BrandCopy.elm
