@@ -16,3 +16,13 @@ rm -rf contemplating-action
 yarn
 yarn test
 echo -e "Tests pass."
+
+#if this is a tagged release, build &deploy to pages
+if [ "$TRAVIS_TAG" ]; then
+    echo -e "Release tag:"
+    echo -e $TRAVIS_TAG
+    DATETIME=`date +%Y%m%d"-"%H%M%S`
+    echo -e "Prepare files for staging deploy"
+    yarn build
+    echo -e "Build success."
+fi
